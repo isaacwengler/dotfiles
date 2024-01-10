@@ -1,0 +1,49 @@
+let mapleader = " "
+
+set nu
+set relativenumber
+set incsearch
+set scrolloff=8
+set ignorecase
+set smartcase
+
+" stop that popping sound
+set visualbell
+set noerrorbells
+
+" centering cursor when jumping
+map <C-d> <C-d>zz
+map <C-u> <C-u>zz
+map n nzz
+map N Nzz
+
+" Searching
+map <leader>sg <Action>(FindInPath)
+map <C-p> <Action>(GotoFile)
+map <leader>pf <Action>(GotoFile)
+
+" LSP interactions
+map <leader>rn <Action>(RenameElement)
+map gr <Action>(GotoDeclaration)
+map gI <Action>(GotoImplementation)
+map gs <Action>(GotoSuperMethod)
+map <C-K> <Action>(ShowErrorDescription)
+map <leader>f <Action>(ReformatCode)
+map <leader>vcr <Action>(Refactorings.QuickListPopupAction)
+map <leader>vca <Action>(ShowIntentionActions)
+
+" debug
+map <leader>dd <Action>(Debug)
+map <leader>dq <Action>(Stop)
+map <leader>db <Action>(ToggleLineBreakpoint)
+map <leader>dc <Action>(Resume)
+map <leader>ds <Action>(StepOver)
+map <leader>do <Action>(StepOut)
+map <leader>di <Action>(StepInto)
+" debugging/running tests
+map <leader>dt <Action>(DebugClass)
+map <leader>rt <Action>(RunClass)
+map <leader>ra <Action>(Run)
+
+" window management
+map <leader>z <Action>(HideAllWindows)
