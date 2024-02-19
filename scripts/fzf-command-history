@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+sessionname=$(tmux display-message -p '#S')
+if [ "$sessionname" !=  "" ]; then 
+    FILE=~/.history/tmux_${sessionname}
+else
+    FILE=~/.zsh_history
+fi
+
+echo $(awk '!seen[$0]++' "$FILE" | fzf)
