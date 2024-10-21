@@ -1,0 +1,15 @@
+import = ["~/.config/alacritty/rose-pine.toml"]
+
+[window]
+padding = { x = 4, y = 4 }
+opacity = 1
+
+[scrolling]
+history = 10000
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Medium" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" } 
+italic = { family = "JetBrainsMono Nerd Font", style = "MediumItalic" } 
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "BoldItalic" } 
+size = 18
