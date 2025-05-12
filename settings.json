@@ -1,0 +1,83 @@
+{
+    "window.commandCenter": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.lineNumbers": "relative",
+    "zenMode.hideLineNumbers": false,
+    "workbench.editor.showTabs": "none",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-p>"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "s", "g"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            "before": ["<leader>", "r", "n"],
+            "commands": ["editor.action.rename"]
+        },
+        {
+            "before": ["<leader>", "v", "c", "a"],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            "before": ["g", "d"],
+            "commands": ["editor.action.revealDefinition"]
+        },
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        {
+            "before": ["<leader>", "d"],
+            "commands": ["editor.action.goToTypeDefinition"]
+        },
+        {
+            "before": ["<leader>", "d", "s"],
+            "commands": ["workbench.action.gotoSymbol"]
+        },
+        {
+            "before": ["<leader>", "w", "s"],
+            "commands": ["workbench.action.showAllSymbols"]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "commands": ["editor.action.triggerParameterHints"]
+        },
+        {
+            "before": ["<leader>", "z"],
+            "commands": [
+                "workbench.action.closePanel",
+                "workbench.action.closeSidebar",
+                "workbench.action.toggleAuxiliaryBar"
+            ]
+        },
+        {
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ]
+}
