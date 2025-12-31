@@ -12,7 +12,7 @@ else
     HISTFILE=~/.zsh_history;
 fi
 
-alias f="print -z \$(fzf-command-history)"
+alias f="print -z \$(~/repo/dotfiles/scripts/tmux-session)"
 
 # save lots of history without duplicates
 HISTSIZE=10000
