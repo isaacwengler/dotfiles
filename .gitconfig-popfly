@@ -1,0 +1,5 @@
+[user]
+	email = isaac@popfly.com
+	signingkey = 7554D8C6EA8A66ED
+[commit]
+	gpgsign = true

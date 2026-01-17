@@ -1,0 +1,8 @@
+[user]
+	name = Isaac Wengler
+    email = iwengler3@gmail.com
+[push]
+	autoSetupRemote = true
+
+[includeIf "gitdir:~/popfly/"]
+	path = ~/.gitconfig-popfly
