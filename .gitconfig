@@ -4,5 +4,5 @@
 [push]
 	autoSetupRemote = true
 
-[includeIf "gitdir:~/popfly/"]
+[includeIf "gitdir:~/repo/popfly/"]
 	path = ~/.gitconfig-popfly
